@@ -6,11 +6,75 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Lord Gabe N</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="image/Gaben.jpg">
+        <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+        <link type="text/css" rel="stylesheet" href="css/custom-style.css">
     </head>
     <body>
-        <div>TODO write content</div>
+        <script type='text/javascript'> 
+            var msg = "Lord Gabe N";
+            msg = " ..... " + msg;pos = 0;
+            function scrollTitle() {
+            document.title = msg.substring(pos, msg.length) + msg.substring(0, pos); pos++;
+            if (pos > msg.length) pos = 0
+            window.setTimeout("scrollTitle()",300);
+            }
+            scrollTitle();
+            </script>
+        <div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Lord Gaben</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>Lord Gaben</h1>
+        <p class="lead">Lord Gaben our PC lord and savior. Ruler of Steam and all its glory.</p>
+        <p><a class="btn btn-lg btn-success" href="https://store.steampowered.com/join/" role="button">Sign up today</a></p>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; RenCo. 2014</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
     </body>
 </html>
